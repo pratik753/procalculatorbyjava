@@ -11,7 +11,7 @@ class calc implements ActionListener
 	GridLayout g;
 	calc(){
 		f=new Frame("my calc");
-		Image icon = Toolkit.getDefaultToolkit().getImage("D:\\Images & Videos\\logo.png");    
+		Image icon = Toolkit.getDefaultToolkit().getImage("./calc.png");    
 f.setIconImage(icon);  
 		f.addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent we){
@@ -41,7 +41,7 @@ f.setIconImage(icon);
 		b10=new Button("9");
 		b10.addActionListener(this);
 		b11=new Button("+");
-		b11.setBackground(Color.red);
+		b11.setBackground(Color.pink);
 		b11.addActionListener(this);
 		b12=new Button("-");
 		b12.addActionListener(this);
@@ -59,12 +59,12 @@ f.setIconImage(icon);
 
 		///
 			b1.setBackground(Color.red);
-		b2.setBackground(Color.green);
+		b2.setBackground(Color.grey);
 		b3.setBackground(Color.blue);
 		b6.setBackground(Color.pink);
 		b7.setBackground(Color.blue);
 		b11.setBackground(Color.red);
-		b14.setBackground(Color.green);
+		b14.setBackground(Color.grey);
 		b15.setBackground(Color.blue);
 		b16.setBackground(Color.pink);
 		b17.setBackground(Color.blue);
@@ -191,7 +191,7 @@ f.setIconImage(icon);
 						
 		}
 		if(e.getSource()==b17){
-			tf.setText("");
+			tf.setText("Enter Number");
 		}
 	
 	}
